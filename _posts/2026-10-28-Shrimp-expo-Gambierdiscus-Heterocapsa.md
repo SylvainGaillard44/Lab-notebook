@@ -14,7 +14,7 @@ tags: "Shrimp-Gambierdiscus-Heterocapsa-Exposure"
 
 
 # Things to do/to test for the pilot exp. 
-- [x] Read about _H. boha_ lab. exposure
+- [] Read about _H. boha_ lab. exposure
 - [ ] Read about feeding study _G. poly_: ratio, etc.
 - [ ] Count, centrifuge, and freeze dry cultures 
 
