@@ -24,5 +24,5 @@ tags: "Shrimp-Gambierdiscus-Heterocapsa-Exposure"
 - [ ] Grind food and look under the microscope if I find the theoretical number of cells
 - [ ] Add food in water for several minutes and look at phyto. cells in the water.
 - [ ] Prepare cage/trap with Julien
-
+- [ ] Test expo. post larvae to food with _G. poly_ and _H. boha_ + direct expo to _H. boha_
 
