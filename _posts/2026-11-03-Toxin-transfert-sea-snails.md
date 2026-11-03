@@ -212,3 +212,47 @@ scatterplot_PTX2
 
 ggsave("scatterplot_snails_PTX2_all.tiff", dpi = 300)
 
+# Plot Dinophysis vs. number of cells consumed vs. time 
+
+#Load file
+
+clearance<-read.csv("LEMAR/Sea-snails_ACR_toxin.csv",header=TRUE)
+
+head(clearance)
+summary(clearance)
+
+#Select factors
+
+clearance$species<-as.factor(clearance$species)
+clearance$sampling_stage<-as.factor(clearance$sampling_stage)
+
+clearance$species<-factor(clearance$species,levels=c("D. acuta","D. caudata","D. sacculus"))
+clearance$sampling_stage<-factor(clearance$sampling_stage,levels=c("24h_exposure","96h_exposure","24h_depuration","96h_depuration","7d_depuration"),labels=c("24","96","24depu","96depu","168depu"))
+
+#Barplot apparent clearance rate
+
+barplot_ACR<-ggplot(data=clearance,aes(x=sampling_stage,y=mean_apparent_clearance_ml_ind_h,fill=species)) +
+  geom_bar(stat="identity",color="black",position=position_dodge()) +
+  geom_errorbar(aes(ymin=pmax(0,mean_apparent_clearance_ml_ind_h-sd_apparent_clearance_ml_ind_h),ymax=mean_apparent_clearance_ml_ind_h+sd_apparent_clearance_ml_ind_h),width=0.2,position=position_dodge(0.9),na.rm=TRUE) +
+  theme_classic()+
+  scale_fill_manual(values=c("#FFAE9D","#E8D5CC","#B39188"))+
+  labs(x="Sampling time",y=expression(atop("Apparent clearance rate",paste("(mL ind"^{-1}," h"^{-1},")"))),fill="Species")
+
+barplot_ACR
+
+ggsave("bigorneaux_ACR_overtime.tiff",dpi=600)
+
+
+#Barplot apparent cell removal rate
+
+barplot_ACRR<-ggplot(data=clearance,aes(x=sampling_stage,y=mean_apparent_cell_removal_cells_ind_h,fill=species)) +
+  geom_bar(stat="identity",color="black",position=position_dodge()) +
+  geom_errorbar(aes(ymin=pmax(0,mean_apparent_cell_removal_cells_ind_h-sd_apparent_cell_removal_cells_ind_h),ymax=mean_apparent_cell_removal_cells_ind_h+sd_apparent_cell_removal_cells_ind_h),width=0.2,position=position_dodge(0.9),na.rm=TRUE) +
+  theme_classic()+
+  scale_fill_manual(values=c("#FFAE9D","#E8D5CC","#B39188"))+
+  labs(x="Sampling time",y=expression(atop("Apparent cell removal rate",paste("(cells ind"^{-1}," h"^{-1},")"))),fill="Species")
+
+barplot_ACRR
+
+ggsave("bigorneaux_ACRR_overtime.tiff",dpi=600)
+
