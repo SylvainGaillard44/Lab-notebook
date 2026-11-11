@@ -14,9 +14,10 @@ tags: "Shrimp-Gambierdiscus-Heterocapsa-Exposure"
 
 
 # Things to do/to test for the pilot exp. 
-- [ ] Read about _H. boha_ lab. exposure
+- [X] Read about _H. boha_ lab. exposure
 - [ ] Read about feeding study _G. poly_: ratio, etc.
-- [ ] Count, centrifuge, and freeze dry cultures 
+- [ ] Count, centrifuge, and freeze dry cultures
+- [ ] Star 10L _H. boha_
 
 # Once we get the postlarvae mid-Nov. or mid-Dec
 - [ ] Prepare food for post larvae with crushed food pellet coated with the emulsion oil/water/freeze dried algae
