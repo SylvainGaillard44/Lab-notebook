@@ -17,13 +17,15 @@ tags: "Shrimp-Gambierdiscus-Heterocapsa-Exposure"
 - [X] Read about _H. boha_ lab. exposure
 - [ ] Read about feeding study _G. poly_: ratio, etc.
 - [ ] Count, centrifuge, and freeze dry cultures
-- [ ] Star 10L _H. boha_
+- [X] Start 10L _H. boha_
+- [ ] Prepare culture bags of _Gamb. poly._
 
 # Once we get the postlarvae mid-Nov. or mid-Dec
+- [ ] Test feeding of larvae with pelleted cells of both dino. 
 - [ ] Prepare food for post larvae with crushed food pellet coated with the emulsion oil/water/freeze dried algae
 - [ ] Test toxicity of the prepared food (Metalg, Nantes)
 - [ ] Grind food and look under the microscope if I find the theoretical number of cells
 - [ ] Add food in water for several minutes and look at phyto. cells in the water.
-- [ ] Prepare cage/trap with Julien
+- [X] Prepare cage/trap with Julien
 - [ ] Test expo. post larvae to food with _G. poly_ and _H. boha_ + direct expo to _H. boha_
 
